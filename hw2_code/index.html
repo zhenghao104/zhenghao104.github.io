@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Priyanka Patange">
+    <meta name="viewport" contetn="width=device-width, initial-scale=1.0">
+    <title>
+      Menu Display page
+    </title>
+  <link href="https://fonts.googleapis.com/css?family=Mukta Vaani" type="text/css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotran">
+      <div class="row header">
+      <!--Title-->
+      <img  src="http://logok.org/wp-content/uploads/2014/06/McDonalds-logo.png" alt="Mcdlogo" width="200px" height="160px">
+        <h1> McDonald's    </h1>
+        <img src="http://logok.org/wp-content/uploads/2014/06/McDonalds-logo.png" alt="Mcdlogo" width="200px" height="160px">
+      </div>
+      
+
+      <h2 class="subHeading">Sales distribution on different region</h2>
+
+      <div id="regionChartNE"></div>
+
+      <div id="regionChartSW"></div>
+
+      <div id="regionChartNW"></div>
+
+      <div id="regionChartSE"></div>
+
+      <div id="regionChartC"></div>
+
+
+      <script src = "https://code.highcharts.com/highcharts.js"></script>
+
+      <script src="regionChartNE.js"></script>
+
+      <script src="regionChartSW.js"></script>
+
+      <script src="regionChartNW.js"></script>
+
+      <script src="regionChartSE.js"></script>
+
+      <script src="regionChartC.js"></script>
+
+      <p class = "description"> The sales distribution of each items in each of the five region. As you can see from the graph there was a dip in sales at October 
+          2018 when burger king released their new burger. We can see that it does affect the sales slightly after the introduction of impossible burger. The trend
+        for each item are pretty consistent across the five regions and hamburger remains the most popular item followed chicken fillet and fish fillet. </p>
+
+      <p class = "description"> A red vertical line is drawn at October 2018 when burger king released the impossible burger. We can see that there is a slow increase
+        in growth for each of the product before burger king release the impossible burger. After the release of the impossible burger it seems that each of the products
+        did not manage to reach the peak sales compared to before October 2018. Based on the sales trend some event may happen in October 2018 that cause the decrease in 
+        sales and growth of all the products. The introduction of impossible burger from burger king may or may not be the causation. There may be correlation but we need
+        to have more experiement to verify whether causation exist, if possible. An important thing to note here is causation does not mean correlation. There may be other
+        major events such as change of price or other external influence that we did not account for that affect the sales of our product. I will not conclude that impossible
+        burger is the causation of our drop in sales just with these graphs.
+      </p>
+
+      <h2 class="subHeading">Sales in all region for each product</h2>
+
+      <div id="foodChart"></div>
+      <script src="foodChart.js"></script>
+
+      <p class="description"> The sales for all products in all regions are shown above. We can also see that there is a dip in sales for all of the product in all region. 
+        A red vertical line is drawn at October 2018 when burger king released the impossible burger. From the previous section we see that the 
+        sales across different regions do not vary too much. This graph shows the trend for each product for all regions. This graph provide a different perspective as it
+        shows the performance for each product across the US. 
+      </p>
+
+      <h2 class="subHeading">Total sales in all region</h2>
+
+      <div id="regionChart"></div>
+      <script src="regionChart.js"></script>
+
+      <p class="description"> The sales for all products in all regions are shown above. We can also see that there is a dip in sales for all of the product in all region.
+        This graph provide another different perspective that shows that the sales for all product in each region rise and fall in a similar trend. All region has a notable
+        dip in sales after the introduction of the impossible burger. It is useful if the user wants to visualize the difference in performance and sales across different regions
+        for all the products.
+      </p>
+
+      <h2 class="subHeading">Average sales in each region on different day of the week</h2>
+      <p class="contact"> This shows the average sales in different day of the week in January 2016<a href="#"></a></p>
+      <div id="regionChartDay"></div>
+      <script src="regionChartDay.js"></script>
+      <p class="description"> The stacked bar chart above shows the average sales in each day of the week for all product during the time period of January 2016.
+        We can see that the sales in each region varies slightly and Friday has the highest sales compare to the other days of the week. For NorthEast region it has 
+        the highest sales on Thursday and for the other four regions Friday has the highest sales. The sales on the weekend for some regions are not as high as weekdays
+        sales which can advise the marketing department to change their strategy and promotion. There can be more promotions to encourage customer to visit the restaurant
+        in the weekends or reward the loyal customers that regularly visit the restaurants during the weekdays. Different region has a slightly different pattern of visiting
+        the restaurant and it may be worth trying to have different marketing strategy targeting each region.
+      </p>
+
+      <h2 class="subHeading">Average sales in all region on different day of the week</h2>
+      <div id="dayLineChart"></div>
+      <script src="dayLineChart.js"></script>
+      <p class="description">This shows the average sales in different day of the week in January 2016. As we can see from the graph the restaurant has the lowest sales in 
+        the weekend compared to weekdays. It is computed by taking the average sales for each of the week to avoid bias as the data may have more frequency of some days of
+        the week compared to other days. This graph can help the marketing strategy to think about their promotion and sales on different day of the week. The previous stacked 
+        bar chart can help the company to think about the strategy for a specific region, and this graph provide an overrall view on the performance across the US.
+      </p>
+
+
+      <h2 class="subHeading">Average sales each month in each region</h2>
+      <div id="regionChartMonth"></div>
+      <script src="regionChartMonth.js"></script>
+      <p class="description">This shows the average sales in different month of the year in from Jan16 to Sep19. Similar as previous stacked bar chart, it allows us to 
+        see the peak season for sales for each region. The peak season for NorthEast region is May, and for the rest of the region it will be August.
+      </p>
+
+      <h2 class="subHeading">Average sales each month in all region</h2>
+      <div id="monthLineChart"></div>
+      <script src="monthLineChart.js"></script>
+      <p class="description"> This shows the average sales in different month of the year in from Jan16 to Sep19. This graph shows that August has the highest sales 
+        compared to other months and October has the lowest average sales. This result can help the marketing team to make decision on when to release their new promotion 
+        targeting for summer season and possibly holiday season to increase their sales other months. As October has the lowest sales, marketing team may think of 
+        promotion such as halloween special to boost their sales.
+      </p>
+
+      <h2 class="subHeading">Average sales distribution each month in all region</h2>
+      <div id="regionPieMonth"></div>
+      <script src="regionPieMonth.js"></script>
+      <p class = "description"> This shows the distribution of the average sales for all region in different month of the year in from Jan16 to Sep19. Although the previous 
+        graph shows that August is the peak season, the share of the slices between each month actually do not differ much as we can see from the pie chart above. The difference
+        is small that it is difficult to differentiate between the size of the pie without looking at the numbers.
+      </p>
+
+      <h2 class="subHeading">Average sales distribution each day in all region at Jan16</h2>
+      <div id="regionPieDay"></div>
+      <script src="regionPieDay.js"></script>
+      <p class="description"> This shows the distribution of the average sales for all region in different day of the week in at Jan16. We can see that Friday has a slightly 
+        bigger shares. The difference between the slices do not differ much as it is difficult to differentiate between the size without looking at the numbers similar as 
+        the previous pie chart.
+      </p>
+
+      <h3 class="subHeading">Average sales distribution each day in all region at Jan16</h3>
+
+  </body>
+</html>
+
+  
